@@ -16,13 +16,13 @@
 # Handling the exception
 def convert_to_integer(value):
     try:
-        x = 10 / 0
+        # x = 10 / 0
         result = int(value)
         print(f'Conversion successful! Result: {result}')
     except ValueError:
        print(f'Conversion failed. Please enter a valid integer.')
-    # except: Handles all exceptions, you can see what the error was
-    except Exception as e: # Catches exception + stores the exception object in a variable e
+    # except: Handles all exceptions, you cant see which error
+    except Exception as e: # Stores the exception object in a variable e + displays which exception
         print(f'An unexpected error occured {e}')
 # #   except (ValueError, ZeroDivisionError) handling specific multiple errors
 #     except ZeroDivisionError:
