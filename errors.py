@@ -22,7 +22,7 @@ def convert_to_integer(value):
     except ValueError:
        print(f'Conversion failed. Please enter a valid integer.')
     # except: Handles all exceptions, you cant see which error
-    except Exception as e: # Stores the exception object in a variable e + displays which exception
+    except Exception as e: # Stores the exception object in a variable e + displays which exception occured 
         print(f'An unexpected error occured {e}')
 # #   except (ValueError, ZeroDivisionError) handling specific multiple errors
 #     except ZeroDivisionError:
